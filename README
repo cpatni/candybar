@@ -1,0 +1,33 @@
+Candybar jQuery Plugin v0.1
+ 
+Overview
+--------
+jQuery plugin to create candybars. 
+
+Known Issues:
+-------------
+Does not work with IE
+
+TODOs
+Support for unobtrusive
+Support for legend 
+IE support
+
+
+Getting Started
+---------------
+
+<script src="../src/jquery.candybar.js" type="text/javascript"></script>
+
+var pagePerformance = [
+     { legend:  "Documents", color: "rgb(47,102,236)", value: 300 },
+     { legend:  "Stylesheets", color: "rgb(157,231,119)", value: 400 },
+     { legend:  "Images", color: "rgb(164,60,255)", value: 350 },
+     { legend:  "Scripts", color: "rgb(255,121,0)", value: 200 },
+     { legend:  "XHR", color: "rgb(231,231,10)", value: 250 },
+     { legend:  "Fonts", color: "rgb(255,82,62)", value: 75 },
+     { legend:  "Other", color: "rgb(186,186,186)", value: 50 }
+];
+jQuery("#pagePerformance").candybar({graphInfo: pagePerformance, width: 800, height: 100});
+
+
